@@ -81,6 +81,10 @@ def plotCalibration(areas, concentrations):
     return slope , y_intercept, r_squared
 
 def findUnknown(slope, yint, numCal,filename):
+    """
+    Finds the unknown concentration.
+    Returns two lists: areas, sample names, and unknown concentrations.
+    """
     areas = []
     unknowns = []
     sampleNames = []
